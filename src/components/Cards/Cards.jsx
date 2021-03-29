@@ -9,6 +9,13 @@ const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
 	if(!confirmed){
 		return 'Loading...';
 	}
+	// <Grid item component = {Card} xs ={12} md={3} className={cx(styles.card,styles.deaths)}>
+		
+	// 	    <CardContent>
+	// 	    	<Typography color = "textSecondary" gutterBottom>No Data</Typography>
+	// 	    	<Typography color = "textSecondary" gutterBottom>No Data</Typography>
+	// 	    </CardContent>
+	// 	</Grid>	
 	return(
 
 		<div className = {styles.container}>
@@ -46,6 +53,7 @@ const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
 		    	
 		    </CardContent>
 		</Grid>	
+
 		<Grid item component = {Card} xs ={12} md={3} className={cx(styles.card,styles.deaths)}>
 		
 		    <CardContent>
@@ -53,6 +61,7 @@ const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
 		    	<Typography color = "textSecondary" gutterBottom>No Data</Typography>
 		    </CardContent>
 		</Grid>	
+		
 		</Grid>
 		</div>
 
